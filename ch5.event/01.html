@@ -49,11 +49,20 @@
         <div class="ilbuni d">
             <img src="images/ilbuni_3.png" alt="일분이">
         </div>
-
     </div>
 
     <script>
         // 직접 타이핑 해보세요
+
+        (function () {
+            const characters = document.querySelector('.characters');
+            function clickHandler(e) {
+                // console.log(this);
+                // console.log(e.currentTarget);
+                console.log(e.target);
+            }
+            characters.addEventListener('click', clickHandler);
+        })();
     </script>
 </body>
 

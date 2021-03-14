@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* 기본값 row
+             * column
+             */
+            flex-direction: row;
+
+            /* 축위에서 정렬
+             * 속성 space-between , space-around , flex-start, flex-end */
+            /* justify-content: center; */
+
+            /* 축의 수직방향으로 정렬 */
+            /* align-items: center; */
+
+
+
+            height: 80vh;
+            background: gray;
+        }
+
+        .item {
+            /* flex grow 안에 속성에 아무숫자나 넣으면 변경 여백의 비율*/
+            flex-grow: 1;
+
+            /* 기본값 auto ->0으로 바꾸면 전체비율로바꿈 */
+            flex-basis: 0;
+
+            /* 축약형  */
+            /* flex:1 */
+
+
+            /* padding: 1em; */
+            font-size: 2rem;
+            border: 3px solid black;
+            background: white;
+        }
+
+        /* .item:nth-child(1) {
+            flex-grow: 3;
+        }
+
+        .item:nth-child(2) {
+            flex-grow: 1;
+        }
+
+        .item:nth-child(3) {
+            flex-grow: 4;
+        }
+
+        .item:nth-child(4) {
+            flex-grow: 3;
+        }
+
+        .item:nth-child(5) {
+            flex-grow: 1;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">AAA</div>
+        <div class="item">B</div>
+        <div class="item">CCCCC</div>
+        <div class="item">DDD</div>
+        <div class="item">E</div>
+    </div>
+</body>
+
+</html>
