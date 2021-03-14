@@ -158,7 +158,10 @@
 
 			stageElem.addEventListener('click', doorHandler);
 
-			activate(document.querySelector('.door:nth-child(2)'));
+			// activate(document.querySelector('.door:nth-child(2)'));
+			requestAnimationFrame(function () {
+				activate(document.querySelector('.door:nth-child(2)'));
+			});
 		})();
 	</script>
 </body>
